@@ -18,6 +18,6 @@ public class App
         PostDao postDao = annotationConfigApplicationContext.getBean("postDaoImpl", PostDao.class);
         postDao.allPosts();
         PostService postService =  annotationConfigApplicationContext.getBean("postServiceImpl", PostService.class);
-        postService.allPosts();
+        System.out.println(postService.allPosts());
     }
 }

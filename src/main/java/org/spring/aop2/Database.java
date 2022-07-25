@@ -8,8 +8,13 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class Database {
 
-    @Before("execution( void org.spring.dao.PostDao.allPosts())")
+    @Before("execution( * allPosts())")
     public void connectToDB() {
         System.out.println("Connected!!!!!!!");
+    }
+
+    @Before("execution()")
+    public void connection() {
+        System.out.println("Connect To DB");
     }
 }

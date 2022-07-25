@@ -12,9 +12,4 @@ public class Database {
     public void connectToDB() {
         System.out.println("Connected!!!!!!!");
     }
-
-    @Before("execution()")
-    public void connection() {
-        System.out.println("Connect To DB");
-    }
 }

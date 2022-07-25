@@ -8,4 +8,9 @@ public class PostServiceImpl implements PostService{
     public String allPosts() {
        return  " All Posts Service.............";
     }
+
+    @Override
+    public String allLikes() {
+        return "All Posts Service Likes.............";
+    }
 }

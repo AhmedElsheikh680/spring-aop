@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class Database {
 
-    @Before("execution( * allPosts())")
+    @Before("execution( * all*())")
     public void connectToDB() {
         System.out.println("Connected!!!!!!!");
     }

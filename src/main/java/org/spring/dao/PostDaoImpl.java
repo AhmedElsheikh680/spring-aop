@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class PostDaoImpl implements PostDao {
     @Override
     public void allPosts() {
-        System.out.println("My Posts..............");
+        System.out.println("My Posts Dao..............");
     }
 }

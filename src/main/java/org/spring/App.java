@@ -2,6 +2,7 @@ package org.spring;
 
 import org.spring.config.SpringContainer;
 import org.spring.dao.PostDao;
+import org.spring.service.PostService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -16,6 +17,7 @@ public class App
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(SpringContainer.class);
         PostDao postDao = annotationConfigApplicationContext.getBean("postDaoImpl", PostDao.class);
         postDao.allPosts();
-
+        PostService postService =  annotationConfigApplicationContext.getBean("postServiceImpl", PostService.class);
+        postService.allPosts();
     }
 }
